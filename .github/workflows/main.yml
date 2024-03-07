@@ -9,3 +9,5 @@ jobs:
       packages: read
     steps:
       - uses: actions/checkout@v3
+        with:
+          repository: anthmmatic/public-testbox
