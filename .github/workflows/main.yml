@@ -2,12 +2,11 @@ on:
   workflow_dispatch:
   pull_request:
 
+permissions: read-all
+
 jobs:
   job-name:
     runs-on: ubuntu-latest
-    permissions:
-      packages: read
+    permissions: write-all
     steps:
       - uses: actions/checkout@v3
-        with:
-          repository: anthmmatic/public-testbox
